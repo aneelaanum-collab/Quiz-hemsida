@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Stockholm – Platser att Besöka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1><span>Stockholm</span> – Platser att Besöka</h1>
+    <p class="tagline">Upptäck de mest uppskattade sevärdheterna</p>
+  </header>
+
+  <main>
+    <section id="top3" class="featured">
+      <h2>🏆 Mest uppskattade platser</h2>
+      <div id="top3List" class="card-grid"></div>
+    </section>
+
+    <section>
+      <h2>Alla platser</h2>
+      <div id="cards" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Stockholm Guide</p>
+  </footer>
+
+  <template id="cardTemplate">
+    <div class="card">
+      <div class="content">
+        <h3 class="title"></h3>
+        <p class="desc"></p>
+        <div class="meta"></div>
+        <button class="btn upvote">👍 Gilla (<span class="count">0</span>)</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

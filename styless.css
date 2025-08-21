@@ -1,0 +1,61 @@
+:root{
+  --bg: #f9f9f0;
+  --green: #b8e994;
+  --yellow: #ffeaa7;
+  --text: #203323;
+  --muted: #555;
+  --shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(160deg, var(--green) 0%, var(--yellow) 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.site-header{
+  padding:24px;
+  text-align:center;
+}
+.site-header h1{
+  margin:0;
+  font-size:2rem;
+}
+.site-header h1 span{color:#2d3436}
+.tagline{color:var(--muted)}
+
+main{max-width:1000px; margin:0 auto; padding:20px}
+h2{margin-top:40px; margin-bottom:16px}
+
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap:16px;
+}
+
+.card{
+  background:white;
+  border-radius:14px;
+  box-shadow: var(--shadow);
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+}
+.title{margin:0 0 6px; font-size:1.2rem}
+.desc{flex:1; color:var(--muted)}
+.meta{font-size:0.85rem; color:var(--muted); margin-bottom:8px}
+
+.btn{
+  border:none;
+  border-radius:8px;
+  padding:8px 12px;
+  cursor:pointer;
+  background:var(--green);
+}
+.btn:hover{background:#a6d785}
+.btn.upvote{font-weight:bold}
+
+.site-footer{text-align:center; padding:20px; color:var(--muted)}
